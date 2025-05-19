@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP2MOVIL.Page.About"
+             Title="About"
+             BackgroundColor="#0C0B0B">
+
+    <!-- Si el contenido supera la pantalla -->
+    <ScrollView>
+        <!-- Contenedor general centrado -->
+        <VerticalStackLayout
+        Padding="200,100"
+        Spacing="30"
+        HorizontalOptions="Center">
+
+            <!-- Grupo 1: Teléfono -->
+            <VerticalStackLayout
+          Spacing="5"
+          HorizontalOptions="Center">
+                <Image
+            Source="call.png"
+            WidthRequest="100"
+            HeightRequest="100" />
+                <Label
+            Text="2954-540219"
+            TextColor="White"
+            HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Grupo 2: Instagram -->
+            <VerticalStackLayout
+          Spacing="5"
+          HorizontalOptions="Center">
+                <Image
+            Source="social_media.png"
+            WidthRequest="100"
+            HeightRequest="100" />
+                <Label
+            Text="@Nacheeeto"
+            TextColor="White"
+            HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Grupo 3: Copyright -->
+            <VerticalStackLayout
+          Spacing="5"
+          HorizontalOptions="Center">
+                <Image
+            Source="copyright.png"
+            WidthRequest="100"
+            HeightRequest="100" />
+                <Label
+            Text="© Copyright 2025"
+            TextColor="White"
+            HorizontalOptions="Center" />
+                <Label
+            Text="ITES- La Pampa"
+            TextColor="White"
+            HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <!-- Botón de regreso -->
+            <Button
+          ImageSource="arrow_back.png"
+          BackgroundColor="Transparent"
+          WidthRequest="100"
+          HeightRequest="100"
+          HorizontalOptions="Center"
+          Clicked="btnMenu_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

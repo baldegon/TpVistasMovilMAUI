@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="TP2MOVIL.Page.Service"
+    Title="Service"
+    BackgroundColor="#0C0B0B">
+
+    <!-- 1) StackLayout que llena toda la pantalla -->
+    <VerticalStackLayout
+      VerticalOptions="Fill"
+      HorizontalOptions="Fill"
+      Padding="20"
+      Spacing="20">
+
+        <!-- Imagen centrada arriba -->
+        <Image
+            Margin="0,200,0,0"
+        Source="hamburguesa2.jpg"
+        Aspect="AspectFill"
+        HeightRequest="200"
+        HorizontalOptions="Center" />
+
+        <!-- Texto centrado debajo de la imagen -->
+        <Label
+        Text="¿Tenés hambre de algo realmente bueno? En BurgerXpress nos especializamos en ofrecerte hamburguesas caseras, jugosas y llenas de sabor, hechas con ingredientes frescos y de calidad. Ya sea que quieras una clásica con cheddar y panceta o una veggie con todo, acá encontrás la hamburguesa ideal para vos."
+        TextColor="White"
+        HorizontalOptions="Center"
+        VerticalOptions="Start"
+        LineBreakMode="WordWrap" />
+
+        <!-- 2) El botón se expande y se “pega” al fondo -->
+        <ImageButton
+            Margin="0,30,0,0"
+        Source="arrow_back.png"
+        BackgroundColor="Transparent"
+        WidthRequest="80"
+        HeightRequest="80"
+        HorizontalOptions="Center"
+        VerticalOptions="EndAndExpand"
+        Clicked="btnMenu_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP2MOVIL.Page.Login"
+             Title="Login"
+             BackgroundColor="#0C0B0B">
+    <VerticalStackLayout>
+        <Image
+            Source="logo.png"
+            Margin="0,20,0,50"
+            />
+        
+        <Entry
+            BackgroundColor="grey"
+            Placeholder="Usuario"
+            x:Name="UsuarioEntry"
+            Margin="20"            
+            TextColor="#FFFFFFFF"/>
+
+        <Entry 
+            BackgroundColor="grey"
+            Placeholder="Contraseña"
+            x:Name="ContraseñaEntry" 
+            IsPassword="True"
+            TextColor="#FFFFFFFF"
+            Margin="20"
+            />
+
+        <Button
+            Text="Login"
+            Clicked="Button_Clicked"
+            Margin="40"
+            TextColor="#FFFFFFFF"/>
+
+    </VerticalStackLayout>
+</ContentPage>

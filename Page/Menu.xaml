@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP2MOVIL.Page.Menu"
+             Title="Menu"
+             BackgroundColor="#0C0B0B">
+
+    <ScrollView HorizontalOptions="Fill" VerticalOptions="Fill">
+        <VerticalStackLayout
+        Padding="0,40"
+        Spacing="40"
+        HorizontalOptions="Fill"
+        VerticalOptions="CenterAndExpand">
+
+            <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                <ImageButton
+                Source="f1.png"
+                BackgroundColor="Transparent"
+                WidthRequest="100"
+                HeightRequest="100"
+                Clicked="btnService_Clicked" />
+                <Label
+                Text="Nuestro menú"
+                TextColor="White"
+                HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <ImageButton
+                Source="info.png"
+                BackgroundColor="Transparent"
+                WidthRequest="100"
+                HeightRequest="100"
+                Clicked="btnAbout_Clicked" />
+                <Label
+                Text="Sobre nosotros"
+                TextColor="White"
+                HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+            <ImageButton
+            Source="arrow_back.png"
+            BackgroundColor="Transparent"
+            WidthRequest="25"
+            HeightRequest="25"
+            HorizontalOptions="Center"
+            Clicked="btnLogin_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
