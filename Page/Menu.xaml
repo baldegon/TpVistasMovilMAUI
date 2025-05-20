@@ -10,22 +10,28 @@
         Padding="0,40"
         Spacing="40"
         HorizontalOptions="Fill"
-        VerticalOptions="CenterAndExpand">
-
-            <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+        VerticalOptions="CenterAndExpand"
+        BackgroundColor="#393E46">
+            <Grid RowDefinitions="2" ColumnDefinitions="3">
+                
                 <ImageButton
+                BorderColor="Black"
+                BorderWidth="100"
                 Source="f1.png"
                 BackgroundColor="Transparent"
                 WidthRequest="100"
                 HeightRequest="100"
                 Clicked="btnService_Clicked" />
                 <Label
-                Text="Nuestro menú"
+                Text="Nuestro Mentor"
                 TextColor="White"
                 HorizontalOptions="Center" />
+                
+            </Grid>
+            <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
             </VerticalStackLayout>
 
-            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+            <VerticalStackLayout Spacing="2" HorizontalOptions="Center" >
                 <ImageButton
                 Source="info.png"
                 BackgroundColor="Transparent"
@@ -33,7 +39,7 @@
                 HeightRequest="100"
                 Clicked="btnAbout_Clicked" />
                 <Label
-                Text="Sobre nosotros"
+                Text="Contacto del Desarrollador"
                 TextColor="White"
                 HorizontalOptions="Center" />
             </VerticalStackLayout>

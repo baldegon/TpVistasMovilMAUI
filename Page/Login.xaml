@@ -4,33 +4,36 @@
              x:Class="TP2MOVIL.Page.Login"
              Title="Login"
              BackgroundColor="#0C0B0B">
-    <VerticalStackLayout>
-        <Image
-            Source="logo.png"
-            Margin="0,20,0,50"
-            />
-        
-        <Entry
-            BackgroundColor="grey"
-            Placeholder="Usuario"
-            x:Name="UsuarioEntry"
-            Margin="20"            
-            TextColor="#FFFFFFFF"/>
+    <ScrollView>
+        <VerticalStackLayout>
 
-        <Entry 
-            BackgroundColor="grey"
-            Placeholder="Contraseña"
-            x:Name="ContraseñaEntry" 
-            IsPassword="True"
-            TextColor="#FFFFFFFF"
-            Margin="20"
-            />
+            <Image
+                Source="logo.png"
+                Margin="0,20,0,50"
+                />
 
-        <Button
-            Text="Login"
-            Clicked="Button_Clicked"
-            Margin="40"
-            TextColor="#FFFFFFFF"/>
+            <Entry
+                BackgroundColor="grey"
+                Placeholder="Usuario"
+                x:Name="UsuarioEntry"
+                Margin="20"            
+                TextColor="#FFFFFFFF"/>
 
-    </VerticalStackLayout>
+            <Entry 
+                BackgroundColor="grey"
+                Placeholder="Contraseña"
+                x:Name="ContraseñaEntry" 
+                IsPassword="True"
+                TextColor="#FFFFFFFF"
+                Margin="20"
+                />
+
+            <Button
+                Text="Login"
+                Clicked="Button_Clicked"
+                Margin="40"
+                TextColor="#FFFFFFFF"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

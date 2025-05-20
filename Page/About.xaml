@@ -5,15 +5,12 @@
              Title="About"
              BackgroundColor="#0C0B0B">
 
-    <!-- Si el contenido supera la pantalla -->
     <ScrollView>
-        <!-- Contenedor general centrado -->
         <VerticalStackLayout
         Padding="200,100"
         Spacing="30"
         HorizontalOptions="Center">
 
-            <!-- Grupo 1: Teléfono -->
             <VerticalStackLayout
           Spacing="5"
           HorizontalOptions="Center">
@@ -27,7 +24,6 @@
             HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Grupo 2: Instagram -->
             <VerticalStackLayout
           Spacing="5"
           HorizontalOptions="Center">
@@ -36,12 +32,10 @@
             WidthRequest="100"
             HeightRequest="100" />
                 <Label
-            Text="@Nacheeeto"
             TextColor="White"
             HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Grupo 3: Copyright -->
             <VerticalStackLayout
           Spacing="5"
           HorizontalOptions="Center">
@@ -59,12 +53,11 @@
             HorizontalOptions="Center" />
             </VerticalStackLayout>
 
-            <!-- Botón de regreso -->
             <Button
           ImageSource="arrow_back.png"
           BackgroundColor="Transparent"
-          WidthRequest="100"
-          HeightRequest="100"
+          WidthRequest="25"
+          HeightRequest="25"
           HorizontalOptions="Center"
           Clicked="btnMenu_Clicked" />
 
