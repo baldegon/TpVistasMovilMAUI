@@ -16,14 +16,15 @@
         <!-- Imagen centrada arriba -->
         <Image
             Margin="0,200,0,0"
-        Source="hamburguesa2.jpg"
+        Source="f1.png"
         Aspect="AspectFill"
+        WidthRequest="200"
         HeightRequest="200"
         HorizontalOptions="Center" />
 
         <!-- Texto centrado debajo de la imagen -->
         <Label
-        Text="¿Tenés hambre de algo realmente bueno? En BurgerXpress nos especializamos en ofrecerte hamburguesas caseras, jugosas y llenas de sabor, hechas con ingredientes frescos y de calidad. Ya sea que quieras una clásica con cheddar y panceta o una veggie con todo, acá encontrás la hamburguesa ideal para vos."
+        Text="Desarrollo de Software a medida, logramos que tu idea sea una realidad"
         TextColor="White"
         HorizontalOptions="Center"
         VerticalOptions="Start"

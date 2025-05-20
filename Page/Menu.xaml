@@ -11,9 +11,7 @@
         Spacing="40"
         HorizontalOptions="Fill"
         VerticalOptions="CenterAndExpand"
-        BackgroundColor="#393E46">
-            <Grid RowDefinitions="2" ColumnDefinitions="3">
-                
+        BackgroundColor="#393E46">                
                 <ImageButton
                 BorderColor="Black"
                 BorderWidth="100"
@@ -23,17 +21,17 @@
                 HeightRequest="100"
                 Clicked="btnService_Clicked" />
                 <Label
+                Margin="0,-40,0,0"
                 Text="Nuestro Mentor"
                 TextColor="White"
                 HorizontalOptions="Center" />
                 
-            </Grid>
             <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
             </VerticalStackLayout>
 
             <VerticalStackLayout Spacing="2" HorizontalOptions="Center" >
                 <ImageButton
-                Source="info.png"
+                Source="momo1.png"
                 BackgroundColor="Transparent"
                 WidthRequest="100"
                 HeightRequest="100"

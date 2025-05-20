@@ -9,7 +9,22 @@
         <VerticalStackLayout
         Padding="200,100"
         Spacing="30"
-        HorizontalOptions="Center">
+        HorizontalOptions="Center"
+        VerticalOptions="FillAndExpand">
+
+            <VerticalStackLayout Spacing="2" HorizontalOptions="Center" >
+                <ImageButton
+            Source="momo1.png"
+            BackgroundColor="Transparent"
+            WidthRequest="100"
+            HeightRequest="100"
+            Clicked="btnAbout_Clicked" />
+                        <Label
+            Text="Contacto del Desarrollador"
+            TextColor="White"
+            HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
 
             <VerticalStackLayout
           Spacing="5"
@@ -30,7 +45,8 @@
                 <Image
             Source="social_media.png"
             WidthRequest="100"
-            HeightRequest="100" />
+            HeightRequest="100"
+            Margin="0,0,0,20"/>
                 <Label
             TextColor="White"
             HorizontalOptions="Center" />
