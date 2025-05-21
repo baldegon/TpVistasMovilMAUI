@@ -6,23 +6,20 @@
     Title="Service"
     BackgroundColor="#0C0B0B">
 
-    <!-- 1) StackLayout que llena toda la pantalla -->
     <VerticalStackLayout
       VerticalOptions="Fill"
       HorizontalOptions="Fill"
       Padding="20"
       Spacing="20">
 
-        <!-- Imagen centrada arriba -->
         <Image
-            Margin="0,200,0,0"
+            Margin="0,150,0,0"
         Source="f1.png"
         Aspect="AspectFill"
         WidthRequest="200"
         HeightRequest="200"
         HorizontalOptions="Center" />
 
-        <!-- Texto centrado debajo de la imagen -->
         <Label
         Text="Desarrollo de Software a medida, logramos que tu idea sea una realidad"
         TextColor="White"
@@ -30,9 +27,8 @@
         VerticalOptions="Start"
         LineBreakMode="WordWrap" />
 
-        <!-- 2) El botón se expande y se “pega” al fondo -->
         <ImageButton
-            Margin="0,30,0,0"
+            Margin="0,0,0,0"
         Source="arrow_back.png"
         BackgroundColor="Transparent"
         WidthRequest="80"

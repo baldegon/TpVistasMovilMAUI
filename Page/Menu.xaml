@@ -22,7 +22,7 @@
                 Clicked="btnService_Clicked" />
                 <Label
                 Margin="0,-40,0,0"
-                Text="Nuestro Mentor"
+                Text="A que nos dedicamos"
                 TextColor="White"
                 HorizontalOptions="Center" />
                 

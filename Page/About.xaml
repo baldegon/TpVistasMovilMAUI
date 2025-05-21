@@ -6,77 +6,78 @@
              BackgroundColor="#0C0B0B">
 
     <ScrollView>
-        <VerticalStackLayout
-        Padding="200,100"
-        Spacing="30"
-        HorizontalOptions="Center"
-        VerticalOptions="FillAndExpand">
+        <Grid Padding="20, 70, 0 ,0"
+              RowSpacing="30"  ColumnSpacing="20" HorizontalOptions="Center"
+              VerticalOptions="FillAndExpand">
 
-            <VerticalStackLayout Spacing="2" HorizontalOptions="Center" >
-                <ImageButton
-            Source="momo1.png"
-            BackgroundColor="Transparent"
-            WidthRequest="100"
-            HeightRequest="100"
-            Clicked="btnAbout_Clicked" />
-                        <Label
-            Text="Contacto del Desarrollador"
-            TextColor="White"
-            HorizontalOptions="Center" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <VerticalStackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                
+                <Label 
+               Padding="0, 0, 0, 200"
+               Text="Trabajos realizados del Desarrollador:"
+               TextColor="White"
+               FontSize="Small"
+               HorizontalTextAlignment="End" />
             </VerticalStackLayout>
 
-
-            <VerticalStackLayout
-          Spacing="5"
-          HorizontalOptions="Center">
-                <Image
-            Source="call.png"
-            WidthRequest="100"
-            HeightRequest="100" />
-                <Label
-            Text="2954-540219"
-            TextColor="White"
-            HorizontalOptions="Center" />
+            <VerticalStackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                <Image Source="f1.png"
+                       WidthRequest="80"
+                       HeightRequest="80" />
+                <Label Text="Curso de Excel"
+                       TextColor="White"
+                       FontSize="Small"
+                       HorizontalTextAlignment="Center" />
             </VerticalStackLayout>
 
-            <VerticalStackLayout
-          Spacing="5"
-          HorizontalOptions="Center">
-                <Image
-            Source="social_media.png"
-            WidthRequest="100"
-            HeightRequest="100"
-            Margin="0,0,0,20"/>
-                <Label
-            TextColor="White"
-            HorizontalOptions="Center" />
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                <Image Source="tauros.png"
+                       WidthRequest="80"
+                       HeightRequest="80" />
+                <Label Text="Tauros-Cocktails"
+                       TextColor="White"
+                       FontSize="Small"
+                       HorizontalTextAlignment="Center" />
             </VerticalStackLayout>
 
-            <VerticalStackLayout
-          Spacing="5"
-          HorizontalOptions="Center">
-                <Image
-            Source="copyright.png"
-            WidthRequest="100"
-            HeightRequest="100" />
-                <Label
-            Text="© Copyright 2025"
-            TextColor="White"
-            HorizontalOptions="Center" />
-                <Label
-            Text="ITES- La Pampa"
-            TextColor="White"
-            HorizontalOptions="Center" />
+            <VerticalStackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                <Image Source="logo.png"
+                       WidthRequest="80"
+                       HeightRequest="80" />
+                <Label Text="Think-In-Maps"
+                       TextColor="White"
+                       FontSize="Small"
+                       HorizontalTextAlignment="Center" />
             </VerticalStackLayout>
 
-            <Button
-          ImageSource="arrow_back.png"
-          BackgroundColor="Transparent"
-          WidthRequest="25"
-          HeightRequest="25"
-          HorizontalOptions="Center"
-          Clicked="btnMenu_Clicked" />
+            <VerticalStackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
+                <Image Source="dulcehechizo.png"
+                       WidthRequest="80"
+                       HeightRequest="80" />
+                <Label Text="Un Dulce Hechizo"
+                       TextColor="White"
+                       FontSize="Small"
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
 
-        </VerticalStackLayout>
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                    ImageSource="arrow_back.png"
+                    BackgroundColor="Transparent"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,0" Clicked="btnMenu_Clicked" />
+        </Grid>
     </ScrollView>
 </ContentPage>
